@@ -1,0 +1,46 @@
+p{
+    font-size:200px;
+	margin-left:36%;
+	margin-top:15%;
+	font-family: 'Rowdies', cursive;
+    color:white
+  }
+
+body {
+    background: #000;
+  }
+  .gravity {
+    width: 10px;
+    height: 10px;
+    animation: sideToSide 3s infinite ease-in-out alternate;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+  }
+  .satellite {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgb(24, 27, 251);
+    animation: circle 6s infinite linear;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    transform-origin: 200px center;
+  }
+  @keyframes circle { to { transform: rotate(1turn); } }
+  @keyframes sideToSide { to { transform: translateX(400px); } }
+
+  .leyenda{
+	font-family: 'Open Sans', sans-serif;
+	color: #ffffff;
+	font-size: 2.6em;
+	margin-top: -0.9em;
+}
+
+.Errorpage-text {
+    color: #fff;
+    text-align: center;
+}
